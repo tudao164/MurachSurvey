@@ -1,8 +1,8 @@
 FROM tomcat:9.0.93
 
-RUN rm -rf /usr/local/tomcat/webapps/*
+RUN rm -rf /src/main/webapp/*
 
-COPY *.war /usr/local/tomcat/webapps
+COPY *.war /src/main/webapp
 
 EXPOSE 8080
 
